@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Son.h"
+#import "Father.h"
 
 @interface ViewController ()
 

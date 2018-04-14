@@ -11,10 +11,10 @@
 @implementation Son
 
 + (void)load {
-    NSLog(@"%@ load",NSStringFromClass([self class]));
+    NSLog(@"Son load");
 }
 
 + (void)initialize {
-    NSLog(@"%@ initialize",NSStringFromClass([self class]));
+    NSLog(@"Son initialize");
 }
 @end

@@ -11,10 +11,11 @@
 @implementation Son (test)
 
 + (void)load {
-    NSLog(@"%@分类 load",NSStringFromClass([self class]));
+    NSLog(@"Son分类 load");
 }
 
 + (void)initialize {
-    NSLog(@"%@分类 initialize",NSStringFromClass([self class]));
+    NSLog(@"Son分类 initialize");
+    //分类的initialize 会覆盖本类
 }
 @end
