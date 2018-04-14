@@ -15,6 +15,9 @@
 		FD1A0D0E208251AE0054EE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D0D208251AE0054EE6E /* main.m */; };
 		FD1A0D18208251AE0054EE6E /* InitializeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D17208251AE0054EE6E /* InitializeTests.m */; };
 		FD1A0D23208251AF0054EE6E /* InitializeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D22208251AF0054EE6E /* InitializeUITests.m */; };
+		FD1A0D33208251F40054EE6E /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D32208251F40054EE6E /* Father.m */; };
+		FD1A0D36208251FF0054EE6E /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D35208251FF0054EE6E /* Son.m */; };
+		FD1A0D392082521F0054EE6E /* Son+test.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A0D382082521F0054EE6E /* Son+test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FD1A0D1E208251AF0054EE6E /* InitializeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InitializeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1A0D22208251AF0054EE6E /* InitializeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitializeUITests.m; sourceTree = "<group>"; };
 		FD1A0D24208251AF0054EE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1A0D31208251F40054EE6E /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		FD1A0D32208251F40054EE6E /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		FD1A0D34208251FF0054EE6E /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		FD1A0D35208251FF0054EE6E /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		FD1A0D372082521F0054EE6E /* Son+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son+test.h"; sourceTree = "<group>"; };
+		FD1A0D382082521F0054EE6E /* Son+test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Son+test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		FD1A0CFD208251AE0054EE6E /* Initialize */ = {
 			isa = PBXGroup;
 			children = (
+				FD1A0D30208251E70054EE6E /* Classes */,
 				FD1A0CFE208251AE0054EE6E /* AppDelegate.h */,
 				FD1A0CFF208251AE0054EE6E /* AppDelegate.m */,
 				FD1A0D01208251AE0054EE6E /* ViewController.h */,
@@ -130,6 +140,19 @@
 				FD1A0D24208251AF0054EE6E /* Info.plist */,
 			);
 			path = InitializeUITests;
+			sourceTree = "<group>";
+		};
+		FD1A0D30208251E70054EE6E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A0D31208251F40054EE6E /* Father.h */,
+				FD1A0D32208251F40054EE6E /* Father.m */,
+				FD1A0D34208251FF0054EE6E /* Son.h */,
+				FD1A0D35208251FF0054EE6E /* Son.m */,
+				FD1A0D372082521F0054EE6E /* Son+test.h */,
+				FD1A0D382082521F0054EE6E /* Son+test.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1A0D03208251AE0054EE6E /* ViewController.m in Sources */,
+				FD1A0D36208251FF0054EE6E /* Son.m in Sources */,
+				FD1A0D392082521F0054EE6E /* Son+test.m in Sources */,
+				FD1A0D33208251F40054EE6E /* Father.m in Sources */,
 				FD1A0D0E208251AE0054EE6E /* main.m in Sources */,
 				FD1A0D00208251AE0054EE6E /* AppDelegate.m in Sources */,
 			);
@@ -431,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
 				INFOPLIST_FILE = Initialize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-qingfengiOS.Initialize";
@@ -444,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
 				INFOPLIST_FILE = Initialize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-qingfengiOS.Initialize";
